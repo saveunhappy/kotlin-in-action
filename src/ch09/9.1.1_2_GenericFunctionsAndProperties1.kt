@@ -1,5 +1,5 @@
 package ch09.ex1_1_2_GenericFunctionsAndProperties1
-
+//扩展属性
 val <T> List<T>.penultimate: T
     get() = this[size - 2]
 

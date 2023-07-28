@@ -4,6 +4,7 @@ import ch06.CollectionUtils
 
 // Kotlin
 // collections.kt
+//全部转换为大写，
 fun printInUppercase(list: List<String>) {
     println(CollectionUtils.uppercaseAll(list))
     println(list.first())

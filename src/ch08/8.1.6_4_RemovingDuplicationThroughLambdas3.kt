@@ -1,5 +1,5 @@
 package ch08.ex1_6_4_RemovingDuplicationThroughLambdas3
-
+//这个是真正的使用方法，传一个predicate
 data class SiteVisit(
     val path: String,
     val duration: Double,
@@ -15,7 +15,7 @@ val log = listOf(
     SiteVisit("/signup", 8.0, OS.IOS),
     SiteVisit("/", 16.3, OS.ANDROID)
 )
-
+//filter也是一个过滤条件，所以可以接收一个predicate，因为就是boolean值啊。
 fun List<SiteVisit>.averageDurationFor(predicate: (SiteVisit) -> Boolean) =
         filter(predicate).map(SiteVisit::duration).average()
 

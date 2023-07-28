@@ -1,5 +1,5 @@
 package ch06.ex2_2_NullablePrimitiveTypes
-
+//基础类型的默认值可以为空
 data class Person(val name: String,
                   val age: Int? = null) {
 

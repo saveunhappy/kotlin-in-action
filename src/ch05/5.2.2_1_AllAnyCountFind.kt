@@ -5,6 +5,7 @@ data class Person(val name: String, val age: Int)
 val canBeInClub27 = { p: Person -> p.age <= 27 }
 
 fun main(args: Array<String>) {
+    //不用像Java中那么麻烦。
     val people = listOf(Person("Alice", 27), Person("Bob", 31))
     println(people.all(canBeInClub27))
 }

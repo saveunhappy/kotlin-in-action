@@ -1,5 +1,6 @@
 package ch08.ex1_4_2_DefaultAndNullValuesForParametersWithFunctionTypes1
-
+//        val str = transform?.invoke(element) ?: element.toString()
+//不为空就执行，为空就另一个，这个invoke方法是规定的，
 fun <T> Collection<T>.joinToString(
         separator: String = ", ",
         prefix: String = "",
@@ -23,6 +24,8 @@ fun main(args: Array<String>) {
     val letters = listOf("Alpha", "Beta")
     println(letters.joinToString())
     println(letters.joinToString { it.toLowerCase() })
+    println(letters.joinToString(separator = "! ", postfix = "! "))
+
     println(letters.joinToString(separator = "! ", postfix = "! ",
            transform = { it.toUpperCase() }))
 }

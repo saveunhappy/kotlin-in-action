@@ -1,5 +1,5 @@
 package ch04.ex2_3_1_ImplementingPropertiesDeclaredInInterfaces
-
+//子类重写父类的属性
 fun getFacebookName(accountId: Int) = "fb:$accountId"
 
 interface User {
@@ -7,7 +7,7 @@ interface User {
 }
 class PrivateUser(override val nickname: String) : User
 
-class SubscribingUser(val email: String) : User {
+class SubscribingUser(private val email: String) : User {
     override val nickname: String
         get() = email.substringBefore('@')
 }

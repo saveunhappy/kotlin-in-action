@@ -2,7 +2,7 @@ package ch02.ex3_4_WhenWithoutArument
 
 import ch02.colors.Color
 import ch02.colors.Color.*
-
+//混合的方式
 fun mixOptimized(c1: Color, c2: Color) =
     when {
         (c1 == RED && c2 == YELLOW) ||

@@ -2,7 +2,7 @@ package ch04.ex4_1_1_ObjectDeclarations
 
 import java.util.Comparator
 import java.io.File
-
+//工厂类？静态类？工具类？都可以吧。
 object CaseInsensitiveFileComparator : Comparator<File> {
     override fun compare(file1: File, file2: File): Int {
         return file1.path.compareTo(file2.path,

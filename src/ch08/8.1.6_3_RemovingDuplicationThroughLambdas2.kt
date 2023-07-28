@@ -1,5 +1,5 @@
 package ch08.ex1_6_3_RemovingDuplicationThroughLambdas2
-
+//filter里面和java8的stream差不多，都是能写自己的逻辑
 data class SiteVisit(
     val path: String,
     val duration: Double,

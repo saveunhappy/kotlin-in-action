@@ -1,5 +1,5 @@
 package ch09.CopyDataOut
-
+//out T 是T的子类型
 fun <T> copyData(source: MutableList<out T>,
                  destination: MutableList<T>) {
     for (item in source) {

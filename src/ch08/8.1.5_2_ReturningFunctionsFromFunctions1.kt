@@ -1,5 +1,5 @@
 package ch08.ex1_5_2_ReturningFunctionsFromFunctions1
-
+//相当于在一个类里面写了个过滤的方法，就是stream中的东西可以自定义
 data class Person(
         val firstName: String,
         val lastName: String,

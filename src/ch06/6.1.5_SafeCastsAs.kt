@@ -1,5 +1,5 @@
 package ch06.ex1_5_SafeCastsAs
-
+// as?转换不成功就返回false，转换成功就转换成Person对象
 class Person(val firstName: String, val lastName: String) {
    override fun equals(o: Any?): Boolean {
       val otherPerson = o as? Person ?: return false

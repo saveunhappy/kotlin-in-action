@@ -1,7 +1,7 @@
 package ch07.ex2_2_1_OrderingOperators
 
 import kotlin.comparisons.compareValuesBy
-
+//比较的话可以直接覆盖，用大于小于进行就可以了,Java中只能使用CompareTo
 class Person(
         val firstName: String, val lastName: String
 ) : Comparable<Person> {

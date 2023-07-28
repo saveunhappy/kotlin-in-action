@@ -1,5 +1,5 @@
 package ch07.ex4_1_DestructuringDeclarationsAndLoops
-
+//解构
 fun printEntries(map: Map<String, String>) {
     for ((key, value) in map) {
         println("$key -> $value")

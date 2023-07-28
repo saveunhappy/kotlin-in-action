@@ -12,4 +12,6 @@ enum class Color(
 
 fun main(args: Array<String>) {
     println(Color.BLUE.rgb())
+    println(Color.BLUE.r)
+
 }

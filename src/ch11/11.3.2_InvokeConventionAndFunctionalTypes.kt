@@ -1,5 +1,5 @@
 package ch11.ex3_2_InvokeConventionAndFunctionalTypes
-
+//重载invoke方法，如果有私有的方法，就在内部用private标注就好了
 data class Issue(
     val id: String, val project: String, val type: String,
     val priority: String, val description: String

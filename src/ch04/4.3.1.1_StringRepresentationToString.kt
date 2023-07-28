@@ -1,5 +1,5 @@
 package ch04.ex3_1_1_StringRepresentationToString
-
+//重写toString方法
 class Client(val name: String, val postalCode: Int) {
     override fun toString() = "Client(name=$name, postalCode=$postalCode)"
 }

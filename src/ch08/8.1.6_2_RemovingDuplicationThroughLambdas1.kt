@@ -1,5 +1,5 @@
 package ch08.ex1_6_2_RemovingDuplicationThroughLambdas1
-
+//还是给list添加扩展函数
 data class SiteVisit(
     val path: String,
     val duration: Double,

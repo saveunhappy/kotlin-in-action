@@ -9,7 +9,7 @@ class Person(val name: String, val company: Company?)
 
 fun Person.countryName(): String {
    val country = this.company?.address?.country
-   return if (country != null) country else "Unknown"
+   return country ?: "Unknown"
 }
 
 fun main(args: Array<String>) {

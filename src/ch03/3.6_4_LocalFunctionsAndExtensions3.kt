@@ -1,7 +1,7 @@
 package ch03.ex6_4_LocalFunctionsAndExtensions3
 
 class User(val id: Int, val name: String, val address: String)
-
+//就认为是创建了一个静态的方法，
 fun User.validateBeforeSave() {
     fun validate(value: String, fieldName: String) {
         if (value.isEmpty()) {

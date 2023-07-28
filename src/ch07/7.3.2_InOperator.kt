@@ -8,7 +8,7 @@ operator fun Rectangle.contains(p: Point): Boolean {
     return p.x in upperLeft.x until lowerRight.x &&
            p.y in upperLeft.y until lowerRight.y
 }
-
+//foreach的类似写法，重写contains，不只是包含字符串，可以包含对象
 fun main(args: Array<String>) {
     val rect = Rectangle(Point(10, 20), Point(50, 50))
     println(Point(20, 30) in rect)

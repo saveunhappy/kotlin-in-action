@@ -1,9 +1,9 @@
 package ch04.ex3_3_ClassDelegationUsingTheByKeyword
 
 import java.util.HashSet
-
+//继承取代委托，委托取代继承，这个就是委托
 class CountingSet<T>(
-        val innerSet: MutableCollection<T> = HashSet<T>()
+    private val innerSet: MutableCollection<T> = HashSet<T>()
 ) : MutableCollection<T> by innerSet {
 
     var objectsAdded = 0

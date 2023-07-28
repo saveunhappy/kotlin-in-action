@@ -1,5 +1,5 @@
 package ch09.CopyDataIn
-
+//in 父类是T
 fun <T> copyData(source: MutableList<T>,
                  destination: MutableList<in T>) {
     for (item in source) {

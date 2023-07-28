@@ -10,5 +10,5 @@ fun getWarmth(color: Color) = when(color) {
 }
 
 fun main(args: Array<String>) {
-    println(getWarmth(Color.ORANGE))
+    println(getWarmth(ORANGE))
 }

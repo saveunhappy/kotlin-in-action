@@ -1,5 +1,5 @@
 package ch05.ex1_4_2_AccessingVariablesInScope1
-
+//可以访问到外部的变量
 fun printProblemCounts(responses: Collection<String>) {
     var clientErrors = 0
     var serverErrors = 0

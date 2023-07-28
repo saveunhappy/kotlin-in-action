@@ -1,5 +1,5 @@
 package ch03.ex3_3_3_UtilityFunctionsAsExtensions2
-
+//拓展了一个函数
 fun <T> Collection<T>.joinToString(
         separator: String = ", ",
         prefix: String = "",

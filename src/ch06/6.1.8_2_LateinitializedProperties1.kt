@@ -7,8 +7,9 @@ import org.junit.Assert
 class MyService {
     fun performAction(): String = "foo"
 }
-
+//这个方法比较好，以后如果写项目的话就用这个方式
 class MyTest {
+    //这个方法比较好
     private lateinit var myService: MyService
 
     @Before fun setUp() {

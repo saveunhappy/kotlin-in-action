@@ -1,7 +1,7 @@
 package ch09.ex3_6_2_4_StarProjection3
 
 import kotlin.reflect.KClass
-
+//综合运用，重载运算符之类的都用上了
 interface FieldValidator<in T> {
     fun validate(input: T): Boolean
 }

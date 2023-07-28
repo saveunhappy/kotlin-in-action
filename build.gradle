@@ -26,4 +26,5 @@ dependencies {
 
 sourceSets {
     main.kotlin.srcDirs += 'src'
+    main.java.srcDirs +='src'
 }
